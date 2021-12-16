@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Advising</title>
+</head>
+<body>
+    
+</body>
+<script>
+        navigator.geolocation.getCurrentPosition(success = s => {
+            console.log(s.coords);
+            location.href = `https://www.google.com/maps/search/Hi%E1%BB%87u+thu%E1%BB%91c/@${s.coords.latitude},${s.coords.longitude},15z/data=!3m1!4b1?hl=vi-VN`
+        }, failure = f => {
+            console.log(f);
+        });
+</script>
+</html>
